@@ -2,11 +2,11 @@
 
 *Processo de Desenvolvimento*
 
-*01/05: 5h*
+*01/05: 5,5h*
 * Estudo do angular: 3h
-* Desenvolvimento do desafio: 2h
+* Desenvolvimento do desafio: 2,5h
 
-*02/05: 1,5h*
+*02/05: 1h*
 * Desenvolvimento do desafio: 1h
 
 Optei por gastar um pouco mais de tempo para aprender a utilizar o angular 2,
