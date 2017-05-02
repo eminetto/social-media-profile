@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 70px;
+}
+
+.form-control {
+    box-shadow: none !important;
+}
+
+.btn-success {
+    background: #02B875 !important;
+}

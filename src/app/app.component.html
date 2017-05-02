@@ -1,0 +1,52 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" routerLink="/home-page" routerLinkActive="active">Social Rockr</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="page-header">
+                <h3>Your Friends</h3>
+                <div *ngFor="let friend of friends">
+                    <div *ngIf="(friend.name) != ''" class="media post">
+                        <div class="media-left">
+                            <img src="{{friend.avatar}}" class="media-object" alt="{{friend.name}}">
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">{{friend.name}}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+
+            <div *ngIf="msg" class="alert alert-danger">{{msg}}</div>
+
+            <div class="col-sm-12 block-new-post">
+                <div class="box-content">
+                    <textarea #post class="form-control" placeholder="Whats on your Mind?"></textarea>
+                </div>
+                <div class="box-toolbar">
+                    <button (click)="add(post.value); post.value=''" class="btn btn-success pull-right">Post </button>
+                </div>
+            </div>
+
+            <div *ngFor="let feed of feeds">
+                <div *ngIf="(feed.text) != ''" class="media post">
+                    <div class="media-left">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{feed.__metadata.descriptives.user.label}}</h4>
+                        <p>{{feed.text}}</p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
