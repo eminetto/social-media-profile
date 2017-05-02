@@ -1,4 +1,4 @@
-# SocialMidiaProfile
+# SocialMediaProfile
 
 *Processo de Desenvolvimento*
 
